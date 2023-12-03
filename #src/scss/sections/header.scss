@@ -1,2 +1,26 @@
 .header {
+  @include adaptiv-value(padding-top, 20, 10, 1);
+  @include adaptiv-value(padding-bottom, 40, 30, 1);
+  &__block {
+    background-color: white;
+    display: flex;
+    @include adaptiv-value(border-radius, 100, 69, 1);
+    @include adaptiv-value(padding-top, 30, 10, 1);
+    @include adaptiv-value(padding-bottom, 30, 10, 1);
+    @include adaptiv-value(padding-left, 50, 20, 1);
+    @include adaptiv-value(padding-right, 50, 20, 1);
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    line-height: 120%;
+    @include adaptiv-value(gap, 15, 11, 1);
+    img {
+      @include adaptiv-value(width, 136, 62, 1);
+    }
+    span {
+      color: #14151f;
+      @include adaptiv-value(font-size, 16, 10, 1);
+    }
+  }
 }
