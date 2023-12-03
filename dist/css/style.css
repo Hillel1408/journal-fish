@@ -61,9 +61,9 @@ section {
 html,
 body {
   height: 100%;
-  min-width: 380px;
+  min-width: 320px;
   cursor: default;
-  letter-spacing: -0.5px;
+  line-height: normal;
 }
 
 body {
@@ -153,6 +153,12 @@ body.loсk {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 100px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -214,5 +220,25 @@ body.loсk {
 @media (max-width: 1840px) {
   .header__logo span {
     font-size: calc(10px + 6 * (100vw - 320px) / 1520);
+  }
+}
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 64px;
+}
+@media (max-width: 1840px) {
+  .header__nav {
+    gap: calc(44px + 20 * (100vw - 320px) / 1520);
+  }
+}
+.header__nav li a {
+  color: #14151f;
+  font-size: 20px;
+}
+@media (max-width: 1840px) {
+  .header__nav li a {
+    font-size: calc(14px + 6 * (100vw - 320px) / 1520);
   }
 }

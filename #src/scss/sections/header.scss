@@ -4,6 +4,8 @@
   &__block {
     background-color: white;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     @include adaptiv-value(border-radius, 100, 69, 1);
     @include adaptiv-value(padding-top, 30, 10, 1);
     @include adaptiv-value(padding-bottom, 30, 10, 1);
@@ -21,6 +23,16 @@
     span {
       color: #14151f;
       @include adaptiv-value(font-size, 16, 10, 1);
+    }
+  }
+  &__nav {
+    display: flex;
+    @include adaptiv-value(gap, 64, 44, 1);
+    li {
+      a {
+        color: #14151f;
+        @include adaptiv-value(font-size, 20, 14, 1);
+      }
     }
   }
 }
