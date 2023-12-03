@@ -1,0 +1,14 @@
+@import "fonts";
+@import "null";
+
+.loсk {
+  overflow: hidden;
+}
+.container {
+  max-width: 2004px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@import "./sections/header";
+@import "./sections/footer";
