@@ -1,2 +1,44 @@
 .footer {
+  background-color: white;
+  &__block {
+    border-bottom: 1px solid rgba(20, 21, 31, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include adaptiv-value(padding-top, 80, 60, 1);
+    @include adaptiv-value(padding-bottom, 45, 25, 1);
+  }
+  &__list {
+    display: flex;
+    @include adaptiv-value(gap, 68, 36, 1);
+    li {
+      a {
+        color: #14151f;
+        line-height: 120%;
+        @include adaptiv-value(font-size, 24, 12, 1);
+      }
+    }
+  }
+  &__flex {
+    display: flex;
+    align-items: center;
+    @include adaptiv-value(gap, 92, 8, 1);
+    a {
+      color: #14151f;
+      line-height: 120%;
+      @include adaptiv-value(font-size, 24, 12, 1);
+    }
+  }
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    @include adaptiv-value(font-size, 22, 10, 1);
+    @include adaptiv-value(padding-top, 46, 26, 1);
+    @include adaptiv-value(padding-bottom, 46, 26, 1);
+    span,
+    a {
+      color: rgba(20, 21, 31, 0.4);
+      line-height: 120%;
+    }
+  }
 }

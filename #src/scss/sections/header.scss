@@ -12,19 +12,6 @@
     @include adaptiv-value(padding-left, 50, 20, 1);
     @include adaptiv-value(padding-right, 50, 20, 1);
   }
-  &__logo {
-    display: flex;
-    align-items: center;
-    line-height: 120%;
-    @include adaptiv-value(gap, 15, 11, 1);
-    img {
-      @include adaptiv-value(width, 136, 62, 1);
-    }
-    span {
-      color: #14151f;
-      @include adaptiv-value(font-size, 16, 10, 1);
-    }
-  }
   &__nav {
     display: flex;
     @include adaptiv-value(gap, 64, 44, 1);

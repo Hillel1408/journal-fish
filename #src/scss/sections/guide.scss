@@ -1,0 +1,24 @@
+.guide {
+  background-color: #8230ea;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      color: white;
+      line-height: 120%;
+      @include adaptiv-value(font-size, 36, 16, 1);
+    }
+  }
+  &__flex {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    img {
+      @include adaptiv-value(width, 338, 200, 1);
+    }
+    button {
+      color: #8230ea;
+    }
+  }
+}
