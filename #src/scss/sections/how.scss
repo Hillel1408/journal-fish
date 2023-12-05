@@ -1,0 +1,31 @@
+.how {
+  @include adaptiv-value(padding-top, 113, 41, 1);
+  @include adaptiv-value(padding-bottom, 62, 48, 1);
+  &__container {
+    display: grid;
+    gap: calc(20 / 1840 * 100%);
+    grid-template-columns: calc(600 / 1840 * 100%) calc(600 / 1840 * 100%) calc(
+        600 / 1840 * 100%
+      );
+  }
+  &__block-1 {
+    background-color: #ea30ab;
+  }
+  &__block-2 {
+    background-color: #f88470;
+  }
+  &__block-3 {
+    background-color: #8230ea;
+  }
+  &__block-1,
+  &__block-2,
+  &__block-3 {
+    @include adaptiv-value(height, 374, 216, 1);
+    @include adaptiv-value(border-radius, 40, 28, 1);
+    & > div {
+      button {
+        margin-right: 20px;
+      }
+    }
+  }
+}
