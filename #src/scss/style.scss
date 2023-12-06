@@ -45,6 +45,11 @@ body {
   color: #fff;
   line-height: 116%;
   @include adaptiv-value(font-size, 68, 20, 1);
+  span {
+    background-color: white;
+    color: #3048ea;
+    padding: 0 15px;
+  }
 }
 .subtitle {
   color: #fff;
@@ -74,4 +79,5 @@ body {
 @import "./sections/intro";
 @import "./sections/how";
 @import "./sections/promo";
+@import "./sections/subscription";
 @import "./sections/footer";

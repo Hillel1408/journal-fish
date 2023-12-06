@@ -1,2 +1,89 @@
 .subscription {
+  @include adaptiv-value(padding-top, 255, 103, 1);
+  @include adaptiv-value(padding-bottom, 246, 102, 1);
+  &__container {
+    background-color: #3048ea;
+    display: flex;
+    align-items: flex-start;
+    gap: calc(81 / 1838 * 100%);
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-image: url("../img/img-7.png");
+    // background-position: right;
+    @include adaptiv-value(border-radius, 40, 28, 1);
+    @include adaptiv-value(padding-top, 154, 66, 1);
+    @include adaptiv-value(padding-bottom, 169, 70, 1);
+    @include adaptiv-value(padding-left, 50, 20, 1);
+    @include adaptiv-value(padding-right, 50, 20, 1);
+  }
+  &__block-1 {
+    width: calc(1107 / 1838 * 100%);
+    h2 {
+      @include adaptiv-value(margin-bottom, 20, 16, 1);
+    }
+  }
+  &__block-2 {
+    width: calc(550 / 1838 * 100%);
+    position: relative;
+    form {
+      position: relative;
+      z-index: 1;
+      background-color: white;
+      @include adaptiv-value(border-radius, 40, 24, 1);
+      @include adaptiv-value(padding-top, 64, 36, 1);
+      @include adaptiv-value(padding-bottom, 64, 36, 1);
+      @include adaptiv-value(padding-left, 64, 20, 1);
+      @include adaptiv-value(padding-right, 64, 20, 1);
+    }
+    img {
+      position: absolute;
+      transform: translateY(-65%) translateX(-17%);
+    }
+  }
+  &__input {
+    height: 37px;
+    padding-bottom: 8px;
+    width: 100%;
+    border-bottom: 1px solid #14151f;
+    position: relative;
+    @include adaptiv-value(margin-bottom, 20, 12, 1);
+    label {
+      position: absolute;
+      left: 0;
+    }
+    input {
+      padding-left: 60px;
+    }
+    label,
+    input {
+      color: #14151f;
+      line-height: 140%;
+      @include adaptiv-value(font-size, 20, 12, 1);
+    }
+  }
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    color: #14151f;
+    @include adaptiv-value(font-size, 14, 8, 1);
+    a {
+      color: #14151f;
+      text-decoration-line: underline;
+      margin-left: 5px;
+    }
+    input {
+      margin-right: 10px;
+    }
+  }
+  &__btn {
+    width: 100%;
+    background-color: #3048ea;
+    text-align: center;
+    border-radius: 42px;
+    color: #fff;
+    @include adaptiv-value(padding-top, 22, 14, 1);
+    @include adaptiv-value(padding-bottom, 22, 14, 1);
+    @include adaptiv-value(margin-top, 40, 24, 1);
+    @include adaptiv-value(font-size, 24, 12, 1);
+  }
 }
