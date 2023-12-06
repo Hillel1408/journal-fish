@@ -1,4 +1,8 @@
 .promo {
+  background-image: url("../img/bg-2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   @include adaptiv-value(padding-top, 258, 99, 1);
   @include adaptiv-value(padding-bottom, 256, 137, 1);
   &__container {

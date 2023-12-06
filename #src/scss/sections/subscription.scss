@@ -1,6 +1,11 @@
 .subscription {
-  @include adaptiv-value(padding-top, 255, 103, 1);
-  @include adaptiv-value(padding-bottom, 246, 102, 1);
+  background-image: url("../img/bg-3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  overflow: hidden;
+  @include adaptiv-value(padding-top, 262, 103, 1);
+  @include adaptiv-value(padding-bottom, 252, 102, 1);
   &__container {
     background-color: #3048ea;
     display: flex;

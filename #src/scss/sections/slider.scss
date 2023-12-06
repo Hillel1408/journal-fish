@@ -1,0 +1,55 @@
+.slider {
+  background-image: url("../img/bg-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  @include adaptiv-value(padding-top, 242, 98, 1);
+  @include adaptiv-value(padding-bottom, 227, 101, 1);
+  &__buttons {
+    display: flex;
+    @include adaptiv-value(gap, 40, 10, 1);
+  }
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      color: #14151f;
+      margin-bottom: 24px;
+    }
+    p {
+      color: #43444c;
+    }
+    button {
+      background-color: #f5f6f7;
+      @include adaptiv-value(width, 80, 33, 1);
+      @include adaptiv-value(height, 80, 33, 1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__swiper {
+    overflow: hidden;
+    @include adaptiv-value(margin-top, 60, 45, 1);
+  }
+  &__slide {
+    h3 {
+      color: #14151f;
+      line-height: 120%;
+      @include adaptiv-value(font-size, 32, 16, 1);
+    }
+    p {
+      @include adaptiv-value(font-size, 22, 12, 1);
+      @include adaptiv-value(margin-top, 8, 6, 1);
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      @include adaptiv-value(border-radius, 445, 200, 1);
+      @include adaptiv-value(border-radius, 40, 28, 1);
+      @include adaptiv-value(margin-bottom, 40, 18, 1);
+    }
+  }
+}

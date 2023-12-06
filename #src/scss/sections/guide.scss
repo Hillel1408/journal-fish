@@ -1,5 +1,12 @@
 .guide {
-  background-color: #8230ea;
+  background-image: url("../img/bg-4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  @include adaptiv-value(padding-top, 126, 74, 1);
+  &__wrapper {
+    background-color: #8230ea;
+  }
   &__container {
     display: flex;
     align-items: center;

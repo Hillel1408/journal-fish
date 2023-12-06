@@ -1,4 +1,6 @@
 .articles {
+  @include adaptiv-value(padding-top, 67, 9, 1);
+  @include adaptiv-value(padding-bottom, 65, 43, 1);
   &__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -11,6 +13,13 @@
       @include adaptiv-value(padding-bottom, 46, 32, 1);
       @include adaptiv-value(padding-left, 50, 20, 1);
       @include adaptiv-value(padding-right, 50, 20, 1);
+      &:nth-child(1) {
+        & > div {
+          span {
+            margin-right: 20px;
+          }
+        }
+      }
       &:nth-child(1),
       &:nth-child(2) {
         grid-column: span 2;
@@ -46,5 +55,15 @@
         }
       }
     }
+  }
+  &__btn {
+    color: #3048ea;
+    border: 1px solid #3048ea;
+    width: 100%;
+    background-color: #f5f6f7;
+    @include adaptiv-value(font-size, 24, 12, 1);
+    @include adaptiv-value(height, 98, 49, 1);
+    @include adaptiv-value(border-radius, 75, 42, 1);
+    @include adaptiv-value(margin-top, 60, 40, 1);
   }
 }
