@@ -1,0 +1,50 @@
+.articles {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include adaptiv-value(gap, 20, 16, 1);
+    & > div {
+      background-repeat: no-repeat;
+      background-position: right;
+      @include adaptiv-value(border-radius, 40, 28, 1);
+      @include adaptiv-value(padding-top, 46, 32, 1);
+      @include adaptiv-value(padding-bottom, 46, 32, 1);
+      @include adaptiv-value(padding-left, 50, 20, 1);
+      @include adaptiv-value(padding-right, 50, 20, 1);
+      &:nth-child(1),
+      &:nth-child(2) {
+        grid-column: span 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &:nth-child(2) {
+        border: 1px solid #3048ea;
+        h2,
+        button {
+          color: #3048ea;
+        }
+        button {
+          border-color: #3048ea;
+        }
+        & > div {
+          span {
+            color: #3048ea;
+            margin-right: 20px;
+          }
+        }
+      }
+      &:nth-child(n + 3) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        @include adaptiv-value(min-height, 330, 174, 1);
+        @include adaptiv-value(gap, 32, 20, 1);
+        button {
+          @include adaptiv-value(margin-right, 20, 12, 1);
+        }
+      }
+    }
+  }
+}

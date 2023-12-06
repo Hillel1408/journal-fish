@@ -6,10 +6,6 @@
     display: flex;
     align-items: flex-start;
     gap: calc(81 / 1838 * 100%);
-    // background-size: contain;
-    // background-repeat: no-repeat;
-    // background-image: url("../img/img-7.png");
-    // background-position: right;
     @include adaptiv-value(border-radius, 40, 28, 1);
     @include adaptiv-value(padding-top, 154, 66, 1);
     @include adaptiv-value(padding-bottom, 169, 70, 1);
