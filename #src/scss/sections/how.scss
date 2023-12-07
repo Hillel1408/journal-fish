@@ -4,9 +4,10 @@
   &__container {
     display: grid;
     @include adaptiv-value(gap, 20, 12, 0);
-    grid-template-columns: calc(600 / 1840 * 100%) calc(600 / 1840 * 100%) calc(
-        600 / 1840 * 100%
-      );
+    grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width: 1199px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
   &__block-1 {
     background-color: #ea30ab;
@@ -16,6 +17,9 @@
   }
   &__block-3 {
     background-color: #8230ea;
+    @media (max-width: 1199px) {
+      grid-column: span 2;
+    }
   }
   &__block-1,
   &__block-2,

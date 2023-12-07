@@ -696,8 +696,14 @@ body.loсk {
   display: -ms-grid;
   display: grid;
   gap: calc(12px + 8 * (100vw - 320px) / 1600);
-  -ms-grid-columns: 32.6086956522% 32.6086956522% 32.6086956522%;
-  grid-template-columns: 32.6086956522% 32.6086956522% 32.6086956522%;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 1199px) {
+  .how__container {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .how__block-1 {
   background-color: #ea30ab;
@@ -707,6 +713,12 @@ body.loсk {
 }
 .how__block-3 {
   background-color: #8230ea;
+}
+@media (max-width: 1199px) {
+  .how__block-3 {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
 }
 .how__block-1, .how__block-2, .how__block-3 {
   height: 374px;
