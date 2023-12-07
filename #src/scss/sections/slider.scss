@@ -44,12 +44,16 @@
       @include adaptiv-value(font-size, 22, 12, 1);
       @include adaptiv-value(margin-top, 8, 6, 1);
     }
-    img {
-      width: 100%;
-      object-fit: cover;
+    &-img {
+      overflow: hidden;
+      background-color: #f5f6f7;
       @include adaptiv-value(border-radius, 445, 200, 1);
       @include adaptiv-value(border-radius, 40, 28, 1);
       @include adaptiv-value(margin-bottom, 40, 18, 1);
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
     }
   }
 }

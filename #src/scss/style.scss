@@ -14,8 +14,11 @@ body {
 }
 .container {
   max-width: 1920px;
-  padding: 0 40px;
+  padding-top: 0;
+  padding-bottom: 0;
   margin: 0 auto;
+  @include adaptiv-value(padding-left, 40, 20, 1);
+  @include adaptiv-value(padding-right, 40, 20, 1);
 }
 .btn {
   background-color: white;

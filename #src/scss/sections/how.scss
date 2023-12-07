@@ -3,7 +3,7 @@
   @include adaptiv-value(padding-bottom, 62, 48, 1);
   &__container {
     display: grid;
-    gap: calc(20 / 1840 * 100%);
+    @include adaptiv-value(gap, 20, 12, 0);
     grid-template-columns: calc(600 / 1840 * 100%) calc(600 / 1840 * 100%) calc(
         600 / 1840 * 100%
       );
