@@ -5,14 +5,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     @include adaptiv-value(gap, 20, 16, 1);
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
     & > div {
       background-repeat: no-repeat;
       background-position: right;
+      background-size: contain;
       @include adaptiv-value(border-radius, 40, 28, 1);
       @include adaptiv-value(padding-top, 46, 32, 1);
       @include adaptiv-value(padding-bottom, 46, 32, 1);
       @include adaptiv-value(padding-left, 50, 20, 1);
       @include adaptiv-value(padding-right, 50, 20, 1);
+      img {
+        position: absolute;
+      }
       &:nth-child(1) {
         & > div {
           span {
@@ -26,6 +33,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media (max-width: 767px) {
+          grid-column: span 1;
+        }
       }
       &:nth-child(2) {
         border: 1px solid #3048ea;
@@ -65,5 +75,53 @@
     @include adaptiv-value(height, 98, 49, 1);
     @include adaptiv-value(border-radius, 75, 42, 1);
     @include adaptiv-value(margin-top, 60, 40, 1);
+  }
+}
+.articles-1 {
+  & > div {
+    &:nth-child(1) {
+      background-color: #ea30ab;
+      img {
+        right: 15%;
+        display: none;
+        @media (max-width: 1500px) {
+          display: block;
+        }
+      }
+    }
+    &:nth-child(3) {
+      background-color: #64d85c;
+      background-image: url("../img/img-5.png");
+    }
+    &:nth-child(4) {
+      background-color: #8230ea;
+    }
+    &:nth-child(5) {
+      background-color: #4993ff;
+    }
+    &:nth-child(6) {
+      background-color: #ffa53f;
+      background-image: url("../img/img-6.png");
+    }
+  }
+}
+.articles-2 {
+  & > div {
+    &:nth-child(1) {
+      background-color: #ffa53f;
+    }
+    &:nth-child(3) {
+      background-color: #ea30ab;
+    }
+    &:nth-child(4) {
+      background-color: #4993ff;
+    }
+    &:nth-child(5) {
+      background-color: #14151f;
+      background-image: url("../img/img-9.png");
+    }
+    &:nth-child(6) {
+      background-color: #3048ea;
+    }
   }
 }

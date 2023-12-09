@@ -8,25 +8,52 @@
     @media (max-width: 1199px) {
       grid-template-columns: 1fr 1fr;
     }
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
   }
   &__block-1 {
     background-color: #ea30ab;
   }
   &__block-2 {
     background-color: #f88470;
+    z-index: 1;
+    img {
+      position: absolute;
+      right: -80%;
+      display: none;
+      @media (max-width: 1500px) {
+        display: block;
+      }
+      @media (max-width: 1199px) {
+        display: none;
+      }
+    }
   }
   &__block-3 {
     background-color: #8230ea;
+    z-index: 3;
     @media (max-width: 1199px) {
       grid-column: span 2;
+    }
+    @media (max-width: 767px) {
+      grid-column: span 1;
     }
   }
   &__block-1,
   &__block-2,
   &__block-3 {
-    @include adaptiv-value(height, 374, 216, 1);
+    gap: 20px;
+    position: relative;
+    @include adaptiv-value(min-height, 374, 216, 1);
     @include adaptiv-value(border-radius, 40, 28, 1);
     & > div {
+      @media (max-width: 1500px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @include adaptiv-value(gap, 16, 12, 1);
+      }
       button {
         margin-right: 20px;
       }
