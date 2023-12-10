@@ -5,6 +5,9 @@
   background-size: contain;
   @include adaptiv-value(padding-top, 242, 98, 1);
   @include adaptiv-value(padding-bottom, 227, 101, 1);
+  @media (max-width: 1500px) {
+    background-image: url("../img/bg-5.png");
+  }
   &__buttons {
     display: flex;
     @include adaptiv-value(gap, 40, 10, 1);

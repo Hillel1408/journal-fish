@@ -17,6 +17,10 @@
     @include adaptiv-value(padding-bottom, 169, 70, 1);
     @include adaptiv-value(padding-left, 50, 20, 1);
     @include adaptiv-value(padding-right, 50, 20, 1);
+    @media (max-width: 1500px) {
+      @include adaptiv-value(padding-top, 70, 66, 1);
+      @include adaptiv-value(padding-bottom, 81, 70, 1);
+    }
     img {
       position: absolute;
       right: -3%;

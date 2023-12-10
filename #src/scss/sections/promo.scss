@@ -16,13 +16,17 @@
     @include adaptiv-value(padding-bottom, 130, 66, 1);
     @include adaptiv-value(padding-left, 50, 20, 1);
     @include adaptiv-value(padding-right, 50, 20, 1);
+    @media (max-width: 1500px) {
+      @include adaptiv-value(padding-top, 70, 66, 1);
+      @include adaptiv-value(padding-bottom, 70, 66, 1);
+    }
   }
   h2 {
     max-width: calc(872 / 1838 * 100%);
     @include adaptiv-value(margin-bottom, 20, 16, 1);
   }
   p {
-    max-width: calc(576 / 1838 * 100%);
+    max-width: calc(696 / 1838 * 100%);
     @include adaptiv-value(margin-bottom, 60, 48, 1);
   }
 }
