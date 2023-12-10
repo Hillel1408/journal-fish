@@ -124,7 +124,8 @@ h6 {
 body {
   background-color: #f5f6f7;
 }
-body.loсk {
+
+.loсk {
   overflow: hidden;
 }
 
@@ -353,6 +354,31 @@ body.loсk {
     gap: calc(44px + 20 * (100vw - 320px) / 1520);
   }
 }
+@media (max-width: 1199px) {
+  .header__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 32px;
+  }
+}
+@media (max-width: 1199px) {
+  .header__nav-wrapper {
+    padding: 26px 22px;
+    margin-left: auto;
+    width: 358px;
+    background-color: white;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .header__nav li a {
   color: #14151f;
   font-size: 20px;
@@ -360,6 +386,76 @@ body.loсk {
 @media (max-width: 1840px) {
   .header__nav li a {
     font-size: calc(14px + 6 * (100vw - 320px) / 1520);
+  }
+}
+.header__list {
+  display: none;
+}
+@media (max-width: 1199px) {
+  .header__list {
+    display: block;
+    margin-top: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__list li a {
+    color: #3048ea;
+    font-style: normal;
+    line-height: 120%;
+  }
+}
+@media (max-width: 1199px) {
+  .header__mobile-block {
+    background: rgba(0, 0, 0, 0.51);
+    -webkit-backdrop-filter: blur(6.6999998093px);
+            backdrop-filter: blur(6.6999998093px);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .header__mobile-block.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.header__mobile-logo {
+  display: none;
+}
+@media (max-width: 1199px) {
+  .header__mobile-logo {
+    display: block;
+    margin-bottom: 50px;
+  }
+}
+.header__close-btn {
+  display: none;
+}
+@media (max-width: 1199px) {
+  .header__close-btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    background-color: transparent;
+  }
+}
+.header__open-btn {
+  background-color: transparent;
+  display: none;
+}
+@media (max-width: 1199px) {
+  .header__open-btn {
+    display: block;
   }
 }
 
@@ -931,7 +1027,7 @@ body.loсk {
 }
 .subscription__container img {
   position: absolute;
-  right: -5%;
+  right: -3%;
   top: -10%;
   width: 793px;
 }
@@ -964,6 +1060,16 @@ body.loсk {
 @media (max-width: 1840px) {
   .subscription__block-1 h2 {
     margin-bottom: calc(16px + 4 * (100vw - 320px) / 1520);
+  }
+}
+.subscription__block-1 p {
+  color: white;
+  max-width: 603px;
+  font-size: 24px;
+}
+@media (max-width: 1840px) {
+  .subscription__block-1 p {
+    font-size: calc(12px + 12 * (100vw - 320px) / 1520);
   }
 }
 @media (max-width: 1190px) {
@@ -1136,6 +1242,7 @@ body.loсk {
   }
 }
 .articles__container > div {
+  position: relative;
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -1291,11 +1398,20 @@ body.loсk {
   background-color: #64d85c;
   background-image: url("../img/img-5.png");
 }
+.articles-1 > div:nth-child(3) h2 {
+  max-width: 612px;
+}
 .articles-1 > div:nth-child(4) {
   background-color: #8230ea;
 }
+.articles-1 > div:nth-child(4) h2 {
+  max-width: 600px;
+}
 .articles-1 > div:nth-child(5) {
   background-color: #4993ff;
+}
+.articles-1 > div:nth-child(5) h2 {
+  max-width: 668px;
 }
 .articles-1 > div:nth-child(6) {
   background-color: #ffa53f;
@@ -1305,8 +1421,15 @@ body.loсk {
 .articles-2 > div:nth-child(1) {
   background-color: #ffa53f;
 }
+.articles-2 > div:nth-child(2) img {
+  bottom: -100px;
+  right: 20%;
+}
 .articles-2 > div:nth-child(3) {
   background-color: #ea30ab;
+}
+.articles-2 > div:nth-child(3) h2 {
+  max-width: 600px;
 }
 .articles-2 > div:nth-child(4) {
   background-color: #4993ff;
@@ -1315,8 +1438,14 @@ body.loсk {
   background-color: #14151f;
   background-image: url("../img/img-9.png");
 }
+.articles-2 > div:nth-child(5) h2 {
+  max-width: 548px;
+}
 .articles-2 > div:nth-child(6) {
   background-color: #3048ea;
+}
+.articles-2 > div:nth-child(6) h2 {
+  max-width: 718px;
 }
 
 .footer {

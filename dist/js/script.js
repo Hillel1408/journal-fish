@@ -16,3 +16,16 @@ const swiper = new Swiper(".slider__swiper", {
     },
   },
 });
+
+const openBtn = document.querySelector(".header__open-btn");
+const closeBtn = document.querySelector(".header__close-btn");
+const mobileMenu = document.querySelector(".header__mobile-block");
+
+openBtn.addEventListener("click", function () {
+  mobileMenu.classList.add("active");
+  document.body.classList.add("loсk");
+});
+closeBtn.addEventListener("click", function () {
+  mobileMenu.classList.remove("active");
+  document.body.classList.remove("loсk");
+});

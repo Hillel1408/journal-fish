@@ -19,7 +19,7 @@
     @include adaptiv-value(padding-right, 50, 20, 1);
     img {
       position: absolute;
-      right: -5%;
+      right: -3%;
       top: -10%;
       @include adaptiv-value(width, 793, 101, 1);
       @media (max-width: 1190px) {
@@ -36,6 +36,11 @@
     width: calc(1107 / 1738 * 100%);
     h2 {
       @include adaptiv-value(margin-bottom, 20, 16, 1);
+    }
+    p {
+      color: white;
+      max-width: 603px;
+      @include adaptiv-value(font-size, 24, 12, 1);
     }
     @media (max-width: 1190px) {
       width: calc(568 / 727 * 100%);

@@ -9,6 +9,7 @@
       grid-template-columns: 1fr;
     }
     & > div {
+      position: relative;
       background-repeat: no-repeat;
       background-position: right;
       background-size: contain;
@@ -92,12 +93,21 @@
     &:nth-child(3) {
       background-color: #64d85c;
       background-image: url("../img/img-5.png");
+      h2 {
+        max-width: 612px;
+      }
     }
     &:nth-child(4) {
       background-color: #8230ea;
+      h2 {
+        max-width: 600px;
+      }
     }
     &:nth-child(5) {
       background-color: #4993ff;
+      h2 {
+        max-width: 668px;
+      }
     }
     &:nth-child(6) {
       background-color: #ffa53f;
@@ -110,8 +120,17 @@
     &:nth-child(1) {
       background-color: #ffa53f;
     }
+    &:nth-child(2) {
+      img {
+        bottom: -100px;
+        right: 20%;
+      }
+    }
     &:nth-child(3) {
       background-color: #ea30ab;
+      h2 {
+        max-width: 600px;
+      }
     }
     &:nth-child(4) {
       background-color: #4993ff;
@@ -119,9 +138,15 @@
     &:nth-child(5) {
       background-color: #14151f;
       background-image: url("../img/img-9.png");
+      h2 {
+        max-width: 548px;
+      }
     }
     &:nth-child(6) {
       background-color: #3048ea;
+      h2 {
+        max-width: 718px;
+      }
     }
   }
 }

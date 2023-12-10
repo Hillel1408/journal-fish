@@ -2,13 +2,62 @@
   <div class="container">
     <div class="header__block">
       @@include('./logo.html')
-      <ul class="header__nav">
-        <li><a href="#">Как писать</a></li>
-        <li><a href="#">Как делать красиво</a></li>
-        <li><a href="#">Кем быть</a></li>
-        <li><a href="#">Как быть крутым</a></li>
-        <li><a href="#">Они смогли</a></li>
-      </ul>
+      <div class="header__mobile-block">
+        <div class="header__nav-wrapper">
+          <div class="header__mobile-logo">@@include('./logo.html')</div>
+          <ul class="header__nav">
+            <li><a href="#">Как писать</a></li>
+            <li><a href="#">Как делать красиво</a></li>
+            <li><a href="#">Кем быть</a></li>
+            <li><a href="#">Как быть крутым</a></li>
+            <li><a href="#">Они смогли</a></li>
+          </ul>
+          <ul class="header__list">
+            <li>
+              <a href="#">ТЕЛЕГРАМ</a>
+            </li>
+            <li>
+              <a href="#">ВК</a>
+            </li>
+            <li>
+              <a href="#">YOUTUBE</a>
+            </li>
+            <li>
+              <a href="#">VC.RU</a>
+            </li>
+          </ul>
+          <button class="header__close-btn">
+            <svg width="28" height="28" fill="none">
+              <path
+                d="M7.00024 6.99988L21.0002 20.9999"
+                stroke="black"
+                stroke-width="1.47368"
+                stroke-linecap="round"
+              />
+              <path
+                d="M21 6.99988L7 20.9999"
+                stroke="black"
+                stroke-width="1.47368"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <button class="header__open-btn">
+        <svg width="43" height="11" fill="none">
+          <rect width="43" height="1" rx="0.5" fill="#14151F" />
+          <rect y="5" width="43" height="1" rx="0.5" fill="#14151F" />
+          <rect
+            x="16.2705"
+            y="10"
+            width="26.7297"
+            height="1"
+            rx="0.5"
+            fill="#14151F"
+          />
+        </svg>
+      </button>
     </div>
   </div>
 </header>

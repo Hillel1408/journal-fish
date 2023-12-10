@@ -8,9 +8,9 @@ $maxWidth: 1920;
 
 body {
   background-color: #f5f6f7;
-  &.loсk {
-    overflow: hidden;
-  }
+}
+.loсk {
+  overflow: hidden;
 }
 .container {
   max-width: 1920px;
