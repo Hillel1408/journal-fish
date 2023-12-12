@@ -715,7 +715,7 @@ body {
   height: calc(356px + 532 * (100vw - 320px) / 1600);
 }
 .intro__block-1 h2 {
-  max-width: 83.0046948357%;
+  max-width: 884px;
   margin-bottom: 26px;
 }
 @media (max-width: 1840px) {
@@ -724,7 +724,7 @@ body {
   }
 }
 .intro__block-1 p {
-  max-width: 70.4225352113%;
+  max-width: 750px;
 }
 .intro__block-2 {
   background-color: #ea30ab;
@@ -732,7 +732,7 @@ body {
   background-position: right bottom;
 }
 .intro__block-2 h2 {
-  max-width: 69.0066225166%;
+  max-width: 521px;
 }
 .intro__block-3 {
   background-color: #8230e9;
@@ -968,7 +968,7 @@ body {
   }
 }
 .promo h2 {
-  max-width: 47.4428726877%;
+  max-width: 872px;
   margin-bottom: 20px;
 }
 @media (max-width: 1840px) {
@@ -977,7 +977,7 @@ body {
   }
 }
 .promo p {
-  max-width: 37.8672470076%;
+  max-width: 696px;
   margin-bottom: 60px;
 }
 @media (max-width: 1840px) {
