@@ -8,14 +8,14 @@
   @media (max-width: 1500px) {
     background-image: url("../img/bg-5.png");
   }
-  @media (max-width: 320px) {
+  @media (max-width: 767px) {
     padding-top: 98px;
     padding-bottom: 101px;
   }
   &__buttons {
     display: flex;
     gap: 40px;
-    @media (max-width: 320px) {
+    @media (max-width: 767px) {
       gap: 10px;
     }
   }
@@ -34,7 +34,7 @@
       background-color: #f5f6f7;
       width: 80px;
       height: 80px;
-      @media (max-width: 320px) {
+      @media (max-width: 767px) {
         width: 33px;
         height: 33px;
       }
@@ -47,7 +47,7 @@
   &__swiper {
     overflow: hidden;
     margin-top: 60px;
-    @media (max-width: 320px) {
+    @media (max-width: 767px) {
       margin-top: 45px;
     }
   }
@@ -56,14 +56,14 @@
       color: #14151f;
       line-height: 120%;
       font-size: 32px;
-      @media (max-width: 320px) {
+      @media (max-width: 767px) {
         font-size: 16px;
       }
     }
     p {
       font-size: 22px;
       margin-top: 8px;
-      @media (max-width: 320px) {
+      @media (max-width: 767px) {
         font-size: 12px;
         margin-top: 6px;
       }
@@ -73,7 +73,7 @@
       background-color: #f5f6f7;
       border-radius: 40px;
       margin-bottom: 40px;
-      @media (max-width: 320px) {
+      @media (max-width: 767px) {
         border-radius: 28px;
         margin-bottom: 18px;
       }

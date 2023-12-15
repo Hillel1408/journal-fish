@@ -1,7 +1,7 @@
 .how {
   padding-top: 113px;
   padding-bottom: 62px;
-  @media (max-width: 320px) {
+  @media (max-width: 767px) {
     padding-top: 41px;
     padding-bottom: 48px;
   }
@@ -15,7 +15,7 @@
     @media (max-width: 767px) {
       grid-template-columns: 1fr;
     }
-    @media (max-width: 320px) {
+    @media (max-width: 767px) {
       gap: 12px;
     }
   }
@@ -54,7 +54,7 @@
     position: relative;
     min-height: 374px;
     border-radius: 40px;
-    @media (max-width: 320px) {
+    @media (max-width: 767px) {
       min-height: 216px;
       border-radius: 28px;
     }
@@ -64,7 +64,7 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
-        @media (max-width: 320px) {
+        @media (max-width: 767px) {
           gap: 12px;
         }
       }

@@ -19,7 +19,7 @@ body {
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
-  @media (max-width: 320px) {
+  @media (max-width: 767px) {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -30,7 +30,7 @@ body {
   line-height: 140%;
   font-size: 24px;
   padding: 22px 60px;
-  @media (max-width: 320px) {
+  @media (max-width: 767px) {
     font-size: 12px;
     padding: 12px 30px;
   }
@@ -43,7 +43,7 @@ body {
   border: 1px solid #fff;
   background-color: transparent;
   font-size: 24px;
-  @media (max-width: 320px) {
+  @media (max-width: 767px) {
     font-size: 12px;
   }
 }
@@ -51,7 +51,7 @@ body {
   color: #fff;
   line-height: 140%;
   font-size: 24px;
-  @media (max-width: 320px) {
+  @media (max-width: 767px) {
     font-size: 12px;
   }
 }
@@ -59,7 +59,7 @@ body {
   color: #fff;
   line-height: 116%;
   font-size: 68px;
-  @media (max-width: 320px) {
+  @media (max-width: 767px) {
     font-size: 20px;
   }
   span {
@@ -72,7 +72,7 @@ body {
   color: #fff;
   line-height: 120%;
   font-size: 40px;
-  @media (max-width: 320px) {
+  @media (max-width: 767px) {
     font-size: 16px;
   }
 }
@@ -83,7 +83,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   padding: 50px;
-  @media (max-width: 320px) {
+  @media (max-width: 767px) {
     padding: 32px 29px 32px 20px;
   }
 }
@@ -91,7 +91,7 @@ body {
   color: #fff;
   line-height: 140%;
   font-size: 24px;
-  @media (max-width: 320px) {
+  @media (max-width: 767px) {
     font-size: 12px;
   }
 }

@@ -1,7 +1,10 @@
 .header {
   padding-top: 20px;
   padding-bottom: 40px;
-  @media (max-width: 320px) {
+  @media (max-width: 1500px) {
+    padding-bottom: 33px;
+  }
+  @media (max-width: 767px) {
     padding-top: 10px;
     padding-bottom: 30px;
   }
@@ -12,7 +15,14 @@
     align-items: center;
     border-radius: 100px;
     padding: 30px 50px;
-    @media (max-width: 320px) {
+    @media (max-width: 1500px) {
+      padding: 12px 40px;
+      border-radius: 40px;
+    }
+    @media (max-width: 1199px) {
+      border-radius: 69px;
+    }
+    @media (max-width: 767px) {
       border-radius: 69px;
       padding: 10px 20px;
     }
@@ -20,12 +30,16 @@
   &__nav {
     display: flex;
     gap: 64px;
-    @media (max-width: 320px) {
+    @media (max-width: 1500px) {
       gap: 44px;
     }
     @media (max-width: 1199px) {
       flex-direction: column;
       gap: 32px;
+    }
+    @media (max-width: 767px) {
+      gap: 44px;
+      text-align: right;
     }
     &-wrapper {
       @media (max-width: 1199px) {
@@ -37,12 +51,18 @@
         display: flex;
         flex-direction: column;
       }
+      @media (max-width: 767px) {
+        width: 320px;
+      }
     }
     li {
       a {
         color: #14151f;
         font-size: 20px;
-        @media (max-width: 320px) {
+        @media (max-width: 1500px) {
+          font-size: 14px;
+        }
+        @media (max-width: 767px) {
           font-size: 14px;
         }
       }

@@ -1,6 +1,6 @@
 .intro {
   padding-bottom: 90px;
-  @media (max-width: 320px) {
+  @media (max-width: 767px) {
     padding-bottom: 40px;
   }
   &__container {
@@ -10,7 +10,7 @@
     @media (max-width: 1199px) {
       grid-template-columns: 1fr;
     }
-    @media (max-width: 320px) {
+    @media (max-width: 767px) {
       gap: 12px;
     }
   }
@@ -19,13 +19,13 @@
     background-image: url("../img/img-1.png");
     background-position: bottom left;
     height: 888px;
-    @media (max-width: 320px) {
+    @media (max-width: 767px) {
       height: 356px;
     }
     h2 {
       max-width: 884px;
       margin-bottom: 26px;
-      @media (max-width: 320px) {
+      @media (max-width: 767px) {
         margin-bottom: 8px;
       }
     }
@@ -57,7 +57,7 @@
     @media (max-width: 767px) {
       grid-template-columns: 1fr;
     }
-    @media (max-width: 320px) {
+    @media (max-width: 767px) {
       gap: 12px;
     }
   }
@@ -69,12 +69,12 @@
   &__block-2,
   &__block-3 {
     border-radius: 60px;
-    @media (max-width: 320px) {
+    @media (max-width: 767px) {
       border-radius: 28px;
     }
     button {
       margin-right: 20px;
-      @media (max-width: 320px) {
+      @media (max-width: 767px) {
         margin-right: 12px;
       }
     }

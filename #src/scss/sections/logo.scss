@@ -3,19 +3,35 @@
   align-items: center;
   line-height: 120%;
   gap: 15px;
-  @media (max-width: 320px) {
+  @media (max-width: 1500px) {
+    gap: 12px;
+  }
+  @media (max-width: 767px) {
     gap: 11px;
   }
   img {
     width: 136px;
-    @media (max-width: 320px) {
+    @media (max-width: 1500px) {
+      width: 107px;
+    }
+    @media (max-width: 1199px) {
+      width: 84px;
+    }
+    @media (max-width: 767px) {
       width: 62px;
     }
   }
   span {
     color: #14151f;
     font-size: 16px;
-    @media (max-width: 320px) {
+    line-height: 120%;
+    @media (max-width: 1500px) {
+      font-size: 13px;
+    }
+    @media (max-width: 1199px) {
+      font-size: 10px;
+    }
+    @media (max-width: 767px) {
       font-size: 10px;
     }
   }

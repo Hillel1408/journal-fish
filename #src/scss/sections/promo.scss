@@ -5,7 +5,7 @@
   background-size: contain;
   padding-top: 258px;
   padding-bottom: 256px;
-  @media (max-width: 320px) {
+  @media (max-width: 767px) {
     padding-top: 99px;
     padding-bottom: 137px;
   }
@@ -19,7 +19,7 @@
     padding: 130px 50px;
     @media (max-width: 1500px) {
     }
-    @media (max-width: 320px) {
+    @media (max-width: 767px) {
       border-radius: 28px;
       padding: 66px 20px;
     }
@@ -27,14 +27,14 @@
   h2 {
     max-width: 872px;
     margin-bottom: 20px;
-    @media (max-width: 320px) {
+    @media (max-width: 767px) {
       margin-bottom: 16px;
     }
   }
   p {
     max-width: 696px;
     margin-bottom: 60px;
-    @media (max-width: 320px) {
+    @media (max-width: 767px) {
       margin-bottom: 48px;
     }
   }

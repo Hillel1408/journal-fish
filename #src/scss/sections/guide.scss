@@ -4,7 +4,7 @@
   background-position: center;
   background-size: contain;
   padding-top: 126px;
-  @media (max-width: 320px) {
+  @media (max-width: 767px) {
     padding-top: 74px;
   }
   &__wrapper {
@@ -18,7 +18,7 @@
       color: white;
       line-height: 120%;
       font-size: 36px;
-      @media (max-width: 320px) {
+      @media (max-width: 767px) {
         font-size: 16px;
       }
     }
@@ -29,7 +29,7 @@
     gap: 23px;
     img {
       width: 338px;
-      @media (max-width: 320px) {
+      @media (max-width: 767px) {
         width: 200px;
       }
     }
