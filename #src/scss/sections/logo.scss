@@ -2,12 +2,21 @@
   display: flex;
   align-items: center;
   line-height: 120%;
-  @include adaptiv-value(gap, 15, 11, 1);
+  gap: 15px;
+  @media (max-width: 320px) {
+    gap: 11px;
+  }
   img {
-    @include adaptiv-value(width, 136, 62, 1);
+    width: 136px;
+    @media (max-width: 320px) {
+      width: 62px;
+    }
   }
   span {
     color: #14151f;
-    @include adaptiv-value(font-size, 16, 10, 1);
+    font-size: 16px;
+    @media (max-width: 320px) {
+      font-size: 10px;
+    }
   }
 }

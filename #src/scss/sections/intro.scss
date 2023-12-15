@@ -1,24 +1,36 @@
 .intro {
-  @include adaptiv-value(padding-bottom, 90, 40, 1);
+  padding-bottom: 90px;
+  @media (max-width: 320px) {
+    padding-bottom: 40px;
+  }
   &__container {
     display: grid;
     grid-template-columns: calc(1065 / 1840 * 100%) calc(755 / 1840 * 100%);
-    @include adaptiv-value(gap, 20, 12, 0);
+    gap: 20px;
     @media (max-width: 1199px) {
       grid-template-columns: 1fr;
+    }
+    @media (max-width: 320px) {
+      gap: 12px;
     }
   }
   &__block-1 {
     background-color: #3048ea;
     background-image: url("../img/img-1.png");
     background-position: bottom left;
-    @include adaptiv-value(height, 888, 356, 0);
+    height: 888px;
+    @media (max-width: 320px) {
+      height: 356px;
+    }
     h2 {
-      max-width: calc(884 / 1065 * 100%);
-      @include adaptiv-value(margin-bottom, 26, 8, 1);
+      max-width: 884px;
+      margin-bottom: 26px;
+      @media (max-width: 320px) {
+        margin-bottom: 8px;
+      }
     }
     p {
-      max-width: calc(750 / 1065 * 100%);
+      max-width: 750px;
     }
   }
   &__block-2 {
@@ -26,7 +38,7 @@
     background-image: url("../img/img-2.png");
     background-position: right bottom;
     h2 {
-      max-width: calc(521 / 755 * 100%);
+      max-width: 521px;
     }
   }
   &__block-3 {
@@ -37,13 +49,16 @@
   &__block-4 {
     display: flex;
     flex-direction: column;
-    @include adaptiv-value(gap, 20, 12, 0);
+    gap: 20px;
     @media (max-width: 1199px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
     @media (max-width: 767px) {
       grid-template-columns: 1fr;
+    }
+    @media (max-width: 320px) {
+      gap: 12px;
     }
   }
   &__block-2,
@@ -53,9 +68,15 @@
   &__block-1,
   &__block-2,
   &__block-3 {
-    @include adaptiv-value(border-radius, 60, 28, 1);
+    border-radius: 60px;
+    @media (max-width: 320px) {
+      border-radius: 28px;
+    }
     button {
-      @include adaptiv-value(margin-right, 20, 12, 1);
+      margin-right: 20px;
+      @media (max-width: 320px) {
+        margin-right: 12px;
+      }
     }
   }
 }

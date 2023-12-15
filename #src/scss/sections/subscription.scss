@@ -4,67 +4,78 @@
   background-position: center;
   background-size: contain;
   overflow: hidden;
-  @include adaptiv-value(padding-top, 262, 103, 1);
-  @include adaptiv-value(padding-bottom, 252, 102, 1);
+  padding-top: 262px;
+  padding-bottom: 252px;
+  @media (max-width: 320px) {
+    padding-top: 103px;
+    padding-bottom: 102px;
+  }
   &__container {
     background-color: #3048ea;
     display: flex;
     align-items: flex-start;
     position: relative;
     gap: calc(81 / 1738 * 100%);
-    @include adaptiv-value(border-radius, 40, 28, 1);
-    @include adaptiv-value(padding-top, 154, 66, 1);
-    @include adaptiv-value(padding-bottom, 169, 70, 1);
-    @include adaptiv-value(padding-left, 50, 20, 1);
-    @include adaptiv-value(padding-right, 50, 20, 1);
-    @media (max-width: 1500px) {
-      @include adaptiv-value(padding-top, 70, 66, 1);
-      @include adaptiv-value(padding-bottom, 81, 70, 1);
+    border-radius: 40px;
+    padding: 154px 50px 169px 50px;
+    @media (max-width: 320px) {
+      border-radius: 28px;
+      padding: 66px 20px 70px 20px;
     }
     img {
       position: absolute;
       right: -3%;
       top: -10%;
-      @include adaptiv-value(width, 793, 101, 1);
-      @media (max-width: 1190px) {
+      width: 793px;
+      @media (max-width: 1199px) {
         top: auto;
         bottom: -10%;
         right: 5%;
       }
+      @media (max-width: 320px) {
+        width: 101px;
+      }
     }
-    @media (max-width: 1190px) {
+    @media (max-width: 1199px) {
       flex-direction: column;
     }
   }
   &__block-1 {
     width: calc(1107 / 1738 * 100%);
     h2 {
-      @include adaptiv-value(margin-bottom, 20, 16, 1);
+      margin-bottom: 20px;
+      @media (max-width: 320px) {
+        margin-bottom: 16px;
+      }
     }
     p {
       color: white;
       max-width: 603px;
-      @include adaptiv-value(font-size, 24, 12, 1);
+      font-size: 24px;
+      @media (max-width: 320px) {
+        font-size: 12px;
+      }
     }
-    @media (max-width: 1190px) {
+    @media (max-width: 1199px) {
       width: calc(568 / 727 * 100%);
     }
   }
   &__block-2 {
     width: calc(550 / 1738 * 100%);
     position: relative;
-    @media (max-width: 1190px) {
+    @media (max-width: 1199px) {
       width: calc(356 / 727 * 100%);
     }
     form {
       position: relative;
       z-index: 1;
       background-color: white;
-      @include adaptiv-value(border-radius, 40, 24, 1);
-      @include adaptiv-value(padding-top, 64, 36, 1);
-      @include adaptiv-value(padding-bottom, 64, 36, 1);
-      @include adaptiv-value(padding-left, 64, 20, 1);
-      @include adaptiv-value(padding-right, 64, 20, 1);
+      border-radius: 40px;
+      padding: 64px;
+      @media (max-width: 320px) {
+        border-radius: 24px;
+        padding: 36px 20px;
+      }
     }
   }
   &__input {
@@ -73,7 +84,10 @@
     width: 100%;
     border-bottom: 1px solid #14151f;
     position: relative;
-    @include adaptiv-value(margin-bottom, 20, 12, 1);
+    margin-bottom: 20px;
+    @media (max-width: 320px) {
+      margin-bottom: 12px;
+    }
     label {
       position: absolute;
       left: 0;
@@ -85,14 +99,20 @@
     input {
       color: #14151f;
       line-height: 140%;
-      @include adaptiv-value(font-size, 20, 12, 1);
+      font-size: 20px;
+      @media (max-width: 320px) {
+        font-size: 12px;
+      }
     }
   }
   &__checkbox {
     display: flex;
     align-items: center;
     color: #14151f;
-    @include adaptiv-value(font-size, 14, 8, 1);
+    font-size: 14px;
+    @media (max-width: 320px) {
+      font-size: 8px;
+    }
     a {
       color: #14151f;
       text-decoration-line: underline;
@@ -108,9 +128,15 @@
     text-align: center;
     border-radius: 42px;
     color: #fff;
-    @include adaptiv-value(padding-top, 22, 14, 1);
-    @include adaptiv-value(padding-bottom, 22, 14, 1);
-    @include adaptiv-value(margin-top, 40, 24, 1);
-    @include adaptiv-value(font-size, 24, 12, 1);
+    font-size: 24px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    margin-top: 40px;
+    @media (max-width: 320px) {
+      font-size: 12px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      margin-top: 24px;
+    }
   }
 }

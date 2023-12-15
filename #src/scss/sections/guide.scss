@@ -3,7 +3,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  @include adaptiv-value(padding-top, 126, 74, 1);
+  padding-top: 126px;
+  @media (max-width: 320px) {
+    padding-top: 74px;
+  }
   &__wrapper {
     background-color: #8230ea;
   }
@@ -14,7 +17,10 @@
     p {
       color: white;
       line-height: 120%;
-      @include adaptiv-value(font-size, 36, 16, 1);
+      font-size: 36px;
+      @media (max-width: 320px) {
+        font-size: 16px;
+      }
     }
   }
   &__flex {
@@ -22,7 +28,10 @@
     align-items: center;
     gap: 23px;
     img {
-      @include adaptiv-value(width, 338, 200, 1);
+      width: 338px;
+      @media (max-width: 320px) {
+        width: 200px;
+      }
     }
     button {
       color: #8230ea;

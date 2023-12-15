@@ -1,23 +1,31 @@
 .articles {
-  @include adaptiv-value(padding-top, 67, 9, 1);
-  @include adaptiv-value(padding-bottom, 65, 43, 1);
+  padding-top: 67px;
+  padding-bottom: 65px;
+  @media (max-width: 320px) {
+    padding-top: 9px;
+    padding-bottom: 43px;
+  }
   &__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    @include adaptiv-value(gap, 20, 16, 1);
+    gap: 20px;
     @media (max-width: 767px) {
       grid-template-columns: 1fr;
+    }
+    @media (max-width: 320px) {
+      gap: 16px;
     }
     & > div {
       position: relative;
       background-repeat: no-repeat;
       background-position: right;
       background-size: contain;
-      @include adaptiv-value(border-radius, 40, 28, 1);
-      @include adaptiv-value(padding-top, 46, 32, 1);
-      @include adaptiv-value(padding-bottom, 46, 32, 1);
-      @include adaptiv-value(padding-left, 50, 20, 1);
-      @include adaptiv-value(padding-right, 50, 20, 1);
+      border-radius: 40px;
+      padding: 46px 50px;
+      @media (max-width: 320px) {
+        border-radius: 28px;
+        padding: 32px 20px;
+      }
       img {
         position: absolute;
       }
@@ -59,9 +67,15 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
-        @include adaptiv-value(gap, 32, 20, 1);
+        gap: 32px;
+        @media (max-width: 320px) {
+          gap: 20px;
+        }
         button {
-          @include adaptiv-value(margin-right, 20, 12, 1);
+          margin-right: 20px;
+          @media (max-width: 320px) {
+            margin-right: 12px;
+          }
         }
       }
     }
@@ -71,10 +85,16 @@
     border: 1px solid #3048ea;
     width: 100%;
     background-color: #f5f6f7;
-    @include adaptiv-value(font-size, 24, 12, 1);
-    @include adaptiv-value(height, 98, 49, 1);
-    @include adaptiv-value(border-radius, 75, 42, 1);
-    @include adaptiv-value(margin-top, 60, 40, 1);
+    font-size: 24px;
+    height: 98px;
+    border-radius: 75px;
+    margin-top: 60px;
+    @media (max-width: 320px) {
+      font-size: 12px;
+      height: 49px;
+      border-radius: 42px;
+      margin-top: 40px;
+    }
   }
 }
 .articles-1 {

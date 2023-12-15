@@ -1,15 +1,22 @@
 .how {
-  @include adaptiv-value(padding-top, 113, 41, 1);
-  @include adaptiv-value(padding-bottom, 62, 48, 1);
+  padding-top: 113px;
+  padding-bottom: 62px;
+  @media (max-width: 320px) {
+    padding-top: 41px;
+    padding-bottom: 48px;
+  }
   &__container {
     display: grid;
-    @include adaptiv-value(gap, 20, 12, 0);
+    gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     @media (max-width: 1199px) {
       grid-template-columns: 1fr 1fr;
     }
     @media (max-width: 767px) {
       grid-template-columns: 1fr;
+    }
+    @media (max-width: 320px) {
+      gap: 12px;
     }
   }
   &__block-1 {
@@ -45,14 +52,21 @@
   &__block-3 {
     gap: 20px;
     position: relative;
-    @include adaptiv-value(min-height, 374, 216, 1);
-    @include adaptiv-value(border-radius, 40, 28, 1);
+    min-height: 374px;
+    border-radius: 40px;
+    @media (max-width: 320px) {
+      min-height: 216px;
+      border-radius: 28px;
+    }
     & > div {
       @media (max-width: 1500px) {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        @include adaptiv-value(gap, 16, 12, 1);
+        gap: 16px;
+        @media (max-width: 320px) {
+          gap: 12px;
+        }
       }
       button {
         margin-right: 20px;

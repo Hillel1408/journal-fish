@@ -3,30 +3,39 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  @include adaptiv-value(padding-top, 258, 99, 1);
-  @include adaptiv-value(padding-bottom, 256, 137, 1);
+  padding-top: 258px;
+  padding-bottom: 256px;
+  @media (max-width: 320px) {
+    padding-top: 99px;
+    padding-bottom: 137px;
+  }
   &__container {
     background-color: #14151f;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("../img/img-4.png");
     background-position: right;
-    @include adaptiv-value(border-radius, 40, 28, 1);
-    @include adaptiv-value(padding-top, 130, 66, 1);
-    @include adaptiv-value(padding-bottom, 130, 66, 1);
-    @include adaptiv-value(padding-left, 50, 20, 1);
-    @include adaptiv-value(padding-right, 50, 20, 1);
+    border-radius: 40px;
+    padding: 130px 50px;
     @media (max-width: 1500px) {
-      @include adaptiv-value(padding-top, 70, 66, 1);
-      @include adaptiv-value(padding-bottom, 70, 66, 1);
+    }
+    @media (max-width: 320px) {
+      border-radius: 28px;
+      padding: 66px 20px;
     }
   }
   h2 {
-    max-width: calc(872 / 1838 * 100%);
-    @include adaptiv-value(margin-bottom, 20, 16, 1);
+    max-width: 872px;
+    margin-bottom: 20px;
+    @media (max-width: 320px) {
+      margin-bottom: 16px;
+    }
   }
   p {
-    max-width: calc(696 / 1838 * 100%);
-    @include adaptiv-value(margin-bottom, 60, 48, 1);
+    max-width: 696px;
+    margin-bottom: 60px;
+    @media (max-width: 320px) {
+      margin-bottom: 48px;
+    }
   }
 }

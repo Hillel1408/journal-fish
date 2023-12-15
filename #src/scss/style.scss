@@ -17,18 +17,23 @@ body {
   padding-top: 0;
   padding-bottom: 0;
   margin: 0 auto;
-  @include adaptiv-value(padding-left, 40, 20, 1);
-  @include adaptiv-value(padding-right, 40, 20, 1);
+  padding-left: 40px;
+  padding-right: 40px;
+  @media (max-width: 320px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .btn {
   background-color: white;
   border-radius: 42px;
   line-height: 140%;
-  @include adaptiv-value(padding-top, 22, 12, 1);
-  @include adaptiv-value(padding-bottom, 22, 12, 1);
-  @include adaptiv-value(padding-left, 60, 30, 1);
-  @include adaptiv-value(padding-right, 60, 30, 1);
-  @include adaptiv-value(font-size, 24, 12, 1);
+  font-size: 24px;
+  padding: 22px 60px;
+  @media (max-width: 320px) {
+    font-size: 12px;
+    padding: 12px 30px;
+  }
 }
 .secondary-btn {
   padding: 10px 20px;
@@ -37,17 +42,26 @@ body {
   border-radius: 42px;
   border: 1px solid #fff;
   background-color: transparent;
-  @include adaptiv-value(font-size, 24, 12, 1);
+  font-size: 24px;
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
 }
 .hashtag {
   color: #fff;
   line-height: 140%;
-  @include adaptiv-value(font-size, 24, 12, 1);
+  font-size: 24px;
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
 }
 .title {
   color: #fff;
   line-height: 116%;
-  @include adaptiv-value(font-size, 68, 20, 1);
+  font-size: 68px;
+  @media (max-width: 320px) {
+    font-size: 20px;
+  }
   span {
     background-color: white;
     color: #3048ea;
@@ -57,7 +71,10 @@ body {
 .subtitle {
   color: #fff;
   line-height: 120%;
-  @include adaptiv-value(font-size, 40, 16, 1);
+  font-size: 40px;
+  @media (max-width: 320px) {
+    font-size: 16px;
+  }
 }
 .padding-block {
   display: flex;
@@ -65,15 +82,18 @@ body {
   justify-content: space-between;
   background-size: contain;
   background-repeat: no-repeat;
-  @include adaptiv-value(padding-top, 50, 32, 1);
-  @include adaptiv-value(padding-bottom, 50, 32, 1);
-  @include adaptiv-value(padding-left, 50, 20, 1);
-  @include adaptiv-value(padding-right, 50, 29, 1);
+  padding: 50px;
+  @media (max-width: 320px) {
+    padding: 32px 29px 32px 20px;
+  }
 }
 .text {
   color: #fff;
   line-height: 140%;
-  @include adaptiv-value(font-size, 24, 12, 1);
+  font-size: 24px;
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
 }
 
 @import "./sections/header";
