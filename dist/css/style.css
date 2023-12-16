@@ -151,6 +151,12 @@ body {
   font-size: 24px;
   padding: 22px 60px;
 }
+@media (max-width: 1500px) {
+  .btn {
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+}
 @media (max-width: 767px) {
   .btn {
     font-size: 12px;
@@ -730,14 +736,34 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .guide__container {
+    gap: 8px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 .guide__container p {
   color: white;
   line-height: 120%;
   font-size: 36px;
+}
+@media (max-width: 1500px) {
+  .guide__container p {
+    font-size: 20px;
+  }
 }
 @media (max-width: 767px) {
   .guide__container p {
@@ -753,12 +779,29 @@ body {
           align-items: center;
   gap: 23px;
 }
+@media (max-width: 767px) {
+  .guide__flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
 .guide__flex img {
   width: 338px;
 }
+@media (max-width: 1500px) {
+  .guide__flex img {
+    width: auto;
+    height: 98px;
+  }
+}
 @media (max-width: 767px) {
   .guide__flex img {
-    width: 200px;
+    height: 58px;
+    -webkit-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
   }
 }
 .guide__flex button {

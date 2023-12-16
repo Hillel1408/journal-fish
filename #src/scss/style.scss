@@ -30,6 +30,10 @@ body {
   line-height: 140%;
   font-size: 24px;
   padding: 22px 60px;
+  @media (max-width: 1500px) {
+    font-size: 16px;
+    padding: 16px 32px;
+  }
   @media (max-width: 767px) {
     font-size: 12px;
     padding: 12px 30px;
