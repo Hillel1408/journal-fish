@@ -2,19 +2,33 @@
   background-image: url("../img/bg-1.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
-  padding-top: 242px;
-  padding-bottom: 227px;
+  background-size: cover;
+  padding-top: 214px;
+  padding-bottom: 199px;
   @media (max-width: 1500px) {
+    padding-top: 149px;
+    padding-bottom: 185px;
+  }
+  @media (max-width: 1300px) {
     background-image: url("../img/bg-5.png");
+  }
+  @media (max-width: 1199px) {
+    padding-top: 163px;
+    padding-bottom: 134px;
   }
   @media (max-width: 767px) {
     padding-top: 98px;
     padding-bottom: 101px;
   }
+  @media (max-width: 380px) {
+    background-image: url("../img/bg-7.png");
+  }
   &__buttons {
     display: flex;
     gap: 40px;
+    @media (max-width: 1500px) {
+      gap: 20px;
+    }
     @media (max-width: 767px) {
       gap: 10px;
     }
@@ -26,6 +40,9 @@
     h2 {
       color: #14151f;
       margin-bottom: 24px;
+      @media (max-width: 1500px) {
+        margin-bottom: 12px;
+      }
     }
     p {
       color: #43444c;
@@ -34,6 +51,17 @@
       background-color: #f5f6f7;
       width: 80px;
       height: 80px;
+      svg {
+        width: 18px;
+        height: 24px;
+      }
+      @media (max-width: 1500px) {
+        width: 40px;
+        height: 40px;
+        svg {
+          transform: scale(0.5);
+        }
+      }
       @media (max-width: 767px) {
         width: 33px;
         height: 33px;
@@ -47,6 +75,12 @@
   &__swiper {
     overflow: hidden;
     margin-top: 60px;
+    @media (max-width: 1500px) {
+      margin-top: 40px;
+    }
+    @media (max-width: 1199px) {
+      margin-right: -20px;
+    }
     @media (max-width: 767px) {
       margin-top: 45px;
     }
@@ -56,6 +90,12 @@
       color: #14151f;
       line-height: 120%;
       font-size: 32px;
+      @media (max-width: 1500px) {
+        font-size: 24px;
+      }
+      @media (max-width: 1199px) {
+        font-size: 20px;
+      }
       @media (max-width: 767px) {
         font-size: 16px;
       }
@@ -63,6 +103,12 @@
     p {
       font-size: 22px;
       margin-top: 8px;
+      @media (max-width: 1500px) {
+        font-size: 16px;
+      }
+      @media (max-width: 1199px) {
+        font-size: 14px;
+      }
       @media (max-width: 767px) {
         font-size: 12px;
         margin-top: 6px;
