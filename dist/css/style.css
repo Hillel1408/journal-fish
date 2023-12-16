@@ -167,6 +167,11 @@ body {
   background-color: transparent;
   font-size: 24px;
 }
+@media (max-width: 1500px) {
+  .secondary-btn {
+    font-size: 15px;
+  }
+}
 @media (max-width: 767px) {
   .secondary-btn {
     font-size: 12px;
@@ -178,6 +183,11 @@ body {
   line-height: 140%;
   font-size: 24px;
 }
+@media (max-width: 1500px) {
+  .hashtag {
+    font-size: 15px;
+  }
+}
 @media (max-width: 767px) {
   .hashtag {
     font-size: 12px;
@@ -188,6 +198,16 @@ body {
   color: #fff;
   line-height: 116%;
   font-size: 68px;
+}
+@media (max-width: 1500px) {
+  .title {
+    font-size: 44px;
+  }
+}
+@media (max-width: 1199px) {
+  .title {
+    font-size: 36px;
+  }
 }
 @media (max-width: 767px) {
   .title {
@@ -204,6 +224,16 @@ body {
   color: #fff;
   line-height: 120%;
   font-size: 40px;
+}
+@media (max-width: 1500px) {
+  .subtitle {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1199px) {
+  .subtitle {
+    font-size: 20px;
+  }
 }
 @media (max-width: 767px) {
   .subtitle {
@@ -226,6 +256,11 @@ body {
   background-repeat: no-repeat;
   padding: 50px;
 }
+@media (max-width: 1500px) {
+  .padding-block {
+    padding: 40px 28px;
+  }
+}
 @media (max-width: 767px) {
   .padding-block {
     padding: 32px 29px 32px 20px;
@@ -236,6 +271,11 @@ body {
   color: #fff;
   line-height: 140%;
   font-size: 24px;
+}
+@media (max-width: 1500px) {
+  .text {
+    font-size: 16px;
+  }
 }
 @media (max-width: 767px) {
   .text {
@@ -656,6 +696,16 @@ body {
 .intro {
   padding-bottom: 90px;
 }
+@media (max-width: 1500px) {
+  .intro {
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 1199px) {
+  .intro {
+    padding-bottom: 10px;
+  }
+}
 @media (max-width: 767px) {
   .intro {
     padding-bottom: 40px;
@@ -685,14 +735,34 @@ body {
   background-position: bottom left;
   height: 888px;
 }
+@media (max-width: 1500px) {
+  .intro__block-1 {
+    height: 596px;
+  }
+}
+@media (max-width: 1199px) {
+  .intro__block-1 {
+    background-image: url("../img/img-23.png");
+    background-position: right;
+    height: 389px;
+  }
+}
 @media (max-width: 767px) {
   .intro__block-1 {
     height: 356px;
+    background-image: url("../img/img-25.png");
+    background-size: auto;
+    background-position: left 120px;
   }
 }
 .intro__block-1 h2 {
   max-width: 884px;
   margin-bottom: 26px;
+}
+@media (max-width: 1500px) {
+  .intro__block-1 h2 {
+    max-width: 538px;
+  }
 }
 @media (max-width: 767px) {
   .intro__block-1 h2 {
@@ -702,18 +772,56 @@ body {
 .intro__block-1 p {
   max-width: 750px;
 }
+@media (max-width: 1500px) {
+  .intro__block-1 p {
+    max-width: 503px;
+  }
+}
+@media (max-width: 1199px) {
+  .intro__block-1 p {
+    max-width: 379px;
+  }
+}
 .intro__block-2 {
   background-color: #ea30ab;
   background-image: url("../img/img-2.png");
   background-position: right bottom;
 }
+@media (max-width: 1199px) {
+  .intro__block-2 {
+    background-image: url("../img/img-24.png");
+    background-size: auto;
+  }
+}
+@media (max-width: 767px) {
+  .intro__block-2 {
+    background-position: top right;
+    background-image: url("../img/img-26.png");
+  }
+}
 .intro__block-2 h2 {
   max-width: 521px;
+}
+@media (max-width: 1500px) {
+  .intro__block-2 h2 {
+    max-width: 317px;
+  }
 }
 .intro__block-3 {
   background-color: #8230e9;
   background-image: url("../img/img-3.png");
   background-position: right;
+}
+@media (max-width: 767px) {
+  .intro__block-3 {
+    background-position: bottom right;
+    background-image: url("../img/img-27.png");
+  }
+}
+@media (max-width: 1500px) {
+  .intro__block-3 h2 {
+    max-width: 300px;
+  }
 }
 .intro__block-4 {
   display: -webkit-box;
@@ -749,8 +857,23 @@ body {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
+@media (max-width: 1199px) {
+  .intro__block-2, .intro__block-3 {
+    height: 302px;
+  }
+}
+@media (max-width: 767px) {
+  .intro__block-2, .intro__block-3 {
+    height: 219px;
+  }
+}
 .intro__block-1, .intro__block-2, .intro__block-3 {
   border-radius: 60px;
+}
+@media (max-width: 1500px) {
+  .intro__block-1, .intro__block-2, .intro__block-3 {
+    border-radius: 40px;
+  }
 }
 @media (max-width: 767px) {
   .intro__block-1, .intro__block-2, .intro__block-3 {
@@ -759,6 +882,11 @@ body {
 }
 .intro__block-1 button, .intro__block-2 button, .intro__block-3 button {
   margin-right: 20px;
+}
+@media (max-width: 1500px) {
+  .intro__block-1 button, .intro__block-2 button, .intro__block-3 button {
+    margin-right: 16px;
+  }
 }
 @media (max-width: 767px) {
   .intro__block-1 button, .intro__block-2 button, .intro__block-3 button {

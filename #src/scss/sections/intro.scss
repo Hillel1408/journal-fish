@@ -1,5 +1,11 @@
 .intro {
   padding-bottom: 90px;
+  @media (max-width: 1500px) {
+    padding-bottom: 80px;
+  }
+  @media (max-width: 1199px) {
+    padding-bottom: 10px;
+  }
   @media (max-width: 767px) {
     padding-bottom: 40px;
   }
@@ -19,32 +25,72 @@
     background-image: url("../img/img-1.png");
     background-position: bottom left;
     height: 888px;
+    @media (max-width: 1500px) {
+      height: 596px;
+    }
+    @media (max-width: 1199px) {
+      background-image: url("../img/img-23.png");
+      background-position: right;
+      height: 389px;
+    }
     @media (max-width: 767px) {
       height: 356px;
+      background-image: url("../img/img-25.png");
+      background-size: auto;
+      background-position: left 120px;
     }
     h2 {
       max-width: 884px;
       margin-bottom: 26px;
+      @media (max-width: 1500px) {
+        max-width: 538px;
+      }
       @media (max-width: 767px) {
         margin-bottom: 8px;
       }
     }
     p {
       max-width: 750px;
+      @media (max-width: 1500px) {
+        max-width: 503px;
+      }
+      @media (max-width: 1199px) {
+        max-width: 379px;
+      }
     }
   }
   &__block-2 {
     background-color: #ea30ab;
     background-image: url("../img/img-2.png");
     background-position: right bottom;
+    @media (max-width: 1199px) {
+      background-image: url("../img/img-24.png");
+      background-size: auto;
+    }
+    @media (max-width: 767px) {
+      background-position: top right;
+      background-image: url("../img/img-26.png");
+    }
     h2 {
       max-width: 521px;
+      @media (max-width: 1500px) {
+        max-width: 317px;
+      }
     }
   }
   &__block-3 {
     background-color: #8230e9;
     background-image: url("../img/img-3.png");
     background-position: right;
+    @media (max-width: 767px) {
+      background-position: bottom right;
+      background-image: url("../img/img-27.png");
+    }
+    h2 {
+      @media (max-width: 1500px) {
+        max-width: 300px;
+      }
+    }
   }
   &__block-4 {
     display: flex;
@@ -64,16 +110,28 @@
   &__block-2,
   &__block-3 {
     flex: 1 1 auto;
+    @media (max-width: 1199px) {
+      height: 302px;
+    }
+    @media (max-width: 767px) {
+      height: 219px;
+    }
   }
   &__block-1,
   &__block-2,
   &__block-3 {
     border-radius: 60px;
+    @media (max-width: 1500px) {
+      border-radius: 40px;
+    }
     @media (max-width: 767px) {
       border-radius: 28px;
     }
     button {
       margin-right: 20px;
+      @media (max-width: 1500px) {
+        margin-right: 16px;
+      }
       @media (max-width: 767px) {
         margin-right: 12px;
       }
