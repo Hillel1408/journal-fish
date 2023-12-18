@@ -1174,9 +1174,21 @@ body {
   background-image: url("../img/bg-2.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   padding-top: 258px;
   padding-bottom: 256px;
+}
+@media (max-width: 1500px) {
+  .promo {
+    padding-top: 162px;
+    padding-bottom: 146px;
+  }
+}
+@media (max-width: 1199px) {
+  .promo {
+    padding-top: 148px;
+    padding-bottom: 117px;
+  }
 }
 @media (max-width: 767px) {
   .promo {
@@ -1186,22 +1198,60 @@ body {
 }
 .promo__container {
   background-color: #14151f;
-  background-size: contain;
+  background-size: auto;
   background-repeat: no-repeat;
   background-image: url("../img/img-4.png");
   background-position: right;
   border-radius: 40px;
   padding: 130px 50px;
 }
+@media (max-width: 1500px) {
+  .promo__container {
+    background-image: url("../img/img-28.png");
+    padding: 70px 28px;
+  }
+}
+@media (max-width: 1199px) {
+  .promo__container {
+    background-image: url("../img/img-29.png");
+  }
+}
 @media (max-width: 767px) {
   .promo__container {
     border-radius: 28px;
     padding: 66px 20px;
+    min-height: 491px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-image: url("../img/img-30.png");
+  }
+}
+@media (max-width: 500px) {
+  .promo__container {
+    background-position: center;
+  }
+}
+@media (max-width: 767px) {
+  .promo__container button {
+    margin-top: auto;
   }
 }
 .promo h2 {
   max-width: 872px;
   margin-bottom: 20px;
+}
+@media (max-width: 1500px) {
+  .promo h2 {
+    max-width: 538px;
+  }
 }
 @media (max-width: 767px) {
   .promo h2 {
@@ -1211,6 +1261,11 @@ body {
 .promo p {
   max-width: 696px;
   margin-bottom: 60px;
+}
+@media (max-width: 1500px) {
+  .promo p {
+    max-width: 376px;
+  }
 }
 @media (max-width: 767px) {
   .promo p {

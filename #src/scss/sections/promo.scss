@@ -2,31 +2,60 @@
   background-image: url("../img/bg-2.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   padding-top: 258px;
   padding-bottom: 256px;
+  @media (max-width: 1500px) {
+    padding-top: 162px;
+    padding-bottom: 146px;
+  }
+  @media (max-width: 1199px) {
+    padding-top: 148px;
+    padding-bottom: 117px;
+  }
   @media (max-width: 767px) {
     padding-top: 99px;
     padding-bottom: 137px;
   }
   &__container {
     background-color: #14151f;
-    background-size: contain;
+    background-size: auto;
     background-repeat: no-repeat;
     background-image: url("../img/img-4.png");
     background-position: right;
     border-radius: 40px;
     padding: 130px 50px;
     @media (max-width: 1500px) {
+      background-image: url("../img/img-28.png");
+      padding: 70px 28px;
+    }
+    @media (max-width: 1199px) {
+      background-image: url("../img/img-29.png");
     }
     @media (max-width: 767px) {
       border-radius: 28px;
       padding: 66px 20px;
+      min-height: 491px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-image: url("../img/img-30.png");
+    }
+    @media (max-width: 500px) {
+      background-position: center;
+    }
+    button {
+      @media (max-width: 767px) {
+        margin-top: auto;
+      }
     }
   }
   h2 {
     max-width: 872px;
     margin-bottom: 20px;
+    @media (max-width: 1500px) {
+      max-width: 538px;
+    }
     @media (max-width: 767px) {
       margin-bottom: 16px;
     }
@@ -34,6 +63,9 @@
   p {
     max-width: 696px;
     margin-bottom: 60px;
+    @media (max-width: 1500px) {
+      max-width: 376px;
+    }
     @media (max-width: 767px) {
       margin-bottom: 48px;
     }
