@@ -46,6 +46,22 @@
     @media (max-width: 767px) {
       grid-column: span 1;
     }
+    img {
+      display: none;
+      @media (max-width: 1199px) {
+        position: absolute;
+        display: block;
+        transform: translateY(-100px);
+        width: 520px;
+        top: 0;
+        right: 0;
+      }
+    }
+    h2 {
+      @media (max-width: 1199px) {
+        max-width: 296px;
+      }
+    }
   }
   &__block-1,
   &__block-2,
@@ -54,6 +70,9 @@
     position: relative;
     min-height: 374px;
     border-radius: 40px;
+    @media (max-width: 1500px) {
+      min-height: 301px;
+    }
     @media (max-width: 767px) {
       min-height: 216px;
       border-radius: 28px;
