@@ -1,6 +1,14 @@
 .how {
   padding-top: 113px;
   padding-bottom: 62px;
+  @media (max-width: 1500px) {
+    padding-top: 54px;
+    padding-bottom: 74px;
+  }
+  @media (max-width: 1199px) {
+    padding-top: 41px;
+    padding-bottom: 32px;
+  }
   @media (max-width: 767px) {
     padding-top: 41px;
     padding-bottom: 48px;
@@ -17,6 +25,8 @@
     }
     @media (max-width: 767px) {
       gap: 12px;
+      padding: 0;
+      overflow: hidden;
     }
   }
   &__block-1 {
@@ -56,6 +66,13 @@
         top: 0;
         right: 0;
       }
+      @media (max-width: 767px) {
+        width: 274px;
+        transform: none;
+      }
+      @media (max-width: 400px) {
+        right: -70px;
+      }
     }
     h2 {
       @media (max-width: 1199px) {
@@ -76,6 +93,7 @@
     @media (max-width: 767px) {
       min-height: 216px;
       border-radius: 28px;
+      margin: 0 20px;
     }
     & > div {
       @media (max-width: 1500px) {
