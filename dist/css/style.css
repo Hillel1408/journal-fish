@@ -1289,10 +1289,16 @@ body {
     background-image: url("../img/bg-10.png");
   }
 }
+@media (max-width: 1199px) {
+  .subscription {
+    padding-top: 131px;
+    padding-bottom: 160px;
+  }
+}
 @media (max-width: 767px) {
   .subscription {
-    padding-top: 103px;
-    padding-bottom: 102px;
+    padding-top: 131px;
+    padding-bottom: 160px;
   }
 }
 .subscription__container {
@@ -1317,10 +1323,18 @@ body {
     grid-template-columns: 1fr 356px;
   }
 }
+@media (max-width: 1199px) {
+  .subscription__container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding: 70px 30px 70px 30px;
+  }
+}
 @media (max-width: 767px) {
   .subscription__container {
     border-radius: 28px;
-    padding: 66px 20px 70px 20px;
+    padding: 70px 30px 70px 30px;
+    gap: 32px;
   }
 }
 .subscription__container img {
@@ -1339,13 +1353,20 @@ body {
 @media (max-width: 1199px) {
   .subscription__container img {
     top: auto;
-    bottom: -10%;
-    right: 5%;
+    bottom: -14%;
+    right: -3%;
+    width: 395px;
+    -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+            transform: rotate(10deg);
   }
 }
 @media (max-width: 767px) {
   .subscription__container img {
-    width: 101px;
+    width: 191px;
+    top: 110px;
+    z-index: 1;
+    right: -20%;
   }
 }
 @media (max-width: 1199px) {
@@ -1367,6 +1388,7 @@ body {
 @media (max-width: 767px) {
   .subscription__block-1 h2 {
     margin-bottom: 16px;
+    max-width: 249px;
   }
 }
 .subscription__block-1 p {
@@ -1382,6 +1404,7 @@ body {
 @media (max-width: 767px) {
   .subscription__block-1 p {
     font-size: 12px;
+    max-width: 214px;
   }
 }
 .subscription__block-2 {
@@ -1397,6 +1420,11 @@ body {
 @media (max-width: 1500px) {
   .subscription__block-2 form {
     padding: 30px 28px;
+  }
+}
+@media (max-width: 1199px) {
+  .subscription__block-2 form {
+    max-width: 356px;
   }
 }
 @media (max-width: 767px) {
