@@ -169,6 +169,7 @@ body {
   color: #fff;
   line-height: 140%;
   border-radius: 42px;
+  font-weight: 300;
   border: 1px solid #fff;
   background-color: transparent;
   font-size: 24px;
@@ -188,6 +189,7 @@ body {
   color: #fff;
   line-height: 140%;
   font-size: 24px;
+  font-weight: 300;
 }
 @media (max-width: 1500px) {
   .hashtag {
@@ -260,7 +262,7 @@ body {
           justify-content: space-between;
   background-size: contain;
   background-repeat: no-repeat;
-  padding: 50px;
+  padding: 40px;
 }
 @media (max-width: 1500px) {
   .padding-block {
@@ -277,6 +279,7 @@ body {
   color: #fff;
   line-height: 140%;
   font-size: 24px;
+  font-weight: 300;
 }
 @media (max-width: 1500px) {
   .text {
@@ -385,6 +388,7 @@ body {
 .header__nav li a {
   color: #14151f;
   font-size: 20px;
+  font-weight: 300;
 }
 @media (max-width: 1500px) {
   .header__nav li a {
@@ -679,6 +683,7 @@ body {
 .slider__slide p {
   font-size: 22px;
   margin-top: 8px;
+  font-weight: 300;
 }
 @media (max-width: 1500px) {
   .slider__slide p {
@@ -886,6 +891,7 @@ body {
 }
 .intro__block-1 p {
   max-width: 750px;
+  opacity: 0.8;
 }
 @media (max-width: 1500px) {
   .intro__block-1 p {
@@ -1167,7 +1173,7 @@ body {
   }
 }
 .how__block-1 > div button, .how__block-2 > div button, .how__block-3 > div button {
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .promo {
@@ -1247,6 +1253,10 @@ body {
 .promo h2 {
   max-width: 872px;
   margin-bottom: 20px;
+}
+.promo h2 span {
+  background-color: #3048e9;
+  color: white;
 }
 @media (max-width: 1500px) {
   .promo h2 {
@@ -1921,6 +1931,7 @@ body {
   color: #14151f;
   line-height: 120%;
   font-size: 24px;
+  font-weight: 300;
 }
 @media (max-width: 1500px) {
   .footer__list li a {
@@ -1964,6 +1975,7 @@ body {
   color: #14151f;
   line-height: 120%;
   font-size: 24px;
+  font-weight: 300;
 }
 @media (max-width: 1500px) {
   .footer__flex a {
@@ -1985,6 +1997,7 @@ body {
   font-size: 22px;
   padding-top: 46px;
   padding-bottom: 46px;
+  font-weight: 300;
 }
 @media (max-width: 1500px) {
   .footer__copyright {

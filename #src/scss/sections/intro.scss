@@ -51,6 +51,7 @@
     }
     p {
       max-width: 750px;
+      opacity: 0.8;
       @media (max-width: 1500px) {
         max-width: 503px;
       }
