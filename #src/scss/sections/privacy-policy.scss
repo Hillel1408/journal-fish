@@ -1,0 +1,30 @@
+.privacy-policy {
+  padding-bottom: 230px;
+  h1 {
+    color: #14151f;
+    margin-bottom: 40px;
+  }
+  p,
+  li {
+    color: #43444c;
+    line-height: 140%;
+    font-size: 24px;
+    font-weight: 300;
+    a {
+      color: #3048ea;
+      text-decoration: underline;
+    }
+    @media (max-width: 1500px) {
+      font-size: 16px;
+    }
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+  ul {
+    padding-left: 20px;
+    li {
+      list-style-type: disc;
+    }
+  }
+}
