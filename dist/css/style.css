@@ -1538,25 +1538,25 @@ body {
 }
 
 .articles {
-  padding-top: 67px;
-  padding-bottom: 65px;
+  padding-top: 60px;
+  padding-bottom: 56px;
 }
 @media (max-width: 1500px) {
   .articles {
-    padding-top: 91px;
-    padding-bottom: 76px;
+    padding-top: 40px;
+    padding-bottom: 74px;
   }
 }
 @media (max-width: 1199px) {
   .articles {
-    padding-top: 63px;
-    padding-bottom: 49px;
+    padding-top: 40px;
+    padding-bottom: 32px;
   }
 }
 @media (max-width: 767px) {
   .articles {
-    padding-top: 9px;
-    padding-bottom: 43px;
+    padding-top: 40px;
+    padding-bottom: 51px;
   }
 }
 .articles__container {
@@ -2305,4 +2305,8 @@ body {
 }
 .privacy-policy ul li {
   list-style-type: disc;
+}
+
+.category-articles h2 {
+  color: #14151f;
 }
