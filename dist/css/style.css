@@ -2355,7 +2355,17 @@ body {
 }
 
 .privacy-policy {
-  padding-bottom: 230px;
+  padding-bottom: 120px;
+}
+@media (max-width: 1500px) {
+  .privacy-policy {
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .privacy-policy {
+    padding-bottom: 80px;
+  }
 }
 .privacy-policy__wrapper {
   padding: 0 150px;
