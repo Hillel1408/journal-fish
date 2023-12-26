@@ -1,5 +1,14 @@
 .privacy-policy {
   padding-bottom: 230px;
+  &__wrapper {
+    padding: 0 150px;
+    @media (max-width: 1500px) {
+      padding: 0 95px;
+    }
+    @media (max-width: 1199px) {
+      padding: 0;
+    }
+  }
   h1 {
     color: #14151f;
     margin-bottom: 40px;
