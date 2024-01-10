@@ -19,14 +19,37 @@
         background-color: white;
         padding: 431px 50px 50px 55px;
         position: relative;
-        img {
+        & > img {
           position: absolute;
           top: 0;
           right: 0;
           transform: translateY(-91px) translateX(-34px);
         }
-        p {
+        & > p {
           color: #14151f;
+        }
+      }
+    }
+    &-2 {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 24px;
+      margin-bottom: 24px;
+      align-items: center;
+      img {
+        border-radius: 100%;
+      }
+      & > div {
+        h3 {
+          color: #14151f;
+          font-size: 28px;
+          line-height: 120%;
+          margin-bottom: 8px;
+        }
+        p {
+          color: #43444c;
+          font-size: 22px;
+          line-height: 140%;
         }
       }
     }
