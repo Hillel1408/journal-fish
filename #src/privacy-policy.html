@@ -8,10 +8,18 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .guide {
+        background-image: none;
+        padding-top: 0;
+      }
+    </style>
   </head>
   <body onclick>
     @@include('./html/header.html')
-    <main>@@include('./html/privacy-policy.html')</main>
+    <main>
+      @@include('./html/privacy-policy.html')@@include('./html/guide.html')
+    </main>
     @@include('./html/footer.html')
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>

@@ -85,6 +85,7 @@
       color: white;
       max-width: 603px;
       font-size: 24px;
+      line-height: 140%;
       @media (max-width: 1500px) {
         font-size: 16px;
       }
@@ -128,11 +129,8 @@
       position: absolute;
       left: 0;
     }
-    input {
-      padding-left: 60px;
-    }
-    label,
-    input {
+    input,
+    input::placeholder {
       color: #14151f;
       line-height: 140%;
       font-size: 20px;
