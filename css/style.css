@@ -434,6 +434,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 100;
   }
   .header__mobile-block.active {
     opacity: 1;
@@ -513,6 +514,7 @@ body {
   color: #14151f;
   font-size: 16px;
   line-height: 120%;
+  font-weight: 300;
 }
 @media (max-width: 1500px) {
   .logo span {
@@ -684,6 +686,7 @@ body {
   font-size: 22px;
   margin-top: 8px;
   font-weight: 300;
+  line-height: 140%;
 }
 @media (max-width: 1500px) {
   .slider__slide p {
@@ -1405,6 +1408,7 @@ body {
   color: white;
   max-width: 603px;
   font-size: 24px;
+  line-height: 140%;
 }
 @media (max-width: 1500px) {
   .subscription__block-1 p {
@@ -1460,24 +1464,65 @@ body {
   position: absolute;
   left: 0;
 }
-.subscription__input input {
-  padding-left: 60px;
+.subscription__input input::-webkit-input-placeholder {
+  color: #14151f;
+  line-height: 140%;
+  font-size: 20px;
 }
-.subscription__input label,
-.subscription__input input {
+.subscription__input input::-moz-placeholder {
+  color: #14151f;
+  line-height: 140%;
+  font-size: 20px;
+}
+.subscription__input input:-ms-input-placeholder {
+  color: #14151f;
+  line-height: 140%;
+  font-size: 20px;
+}
+.subscription__input input::-ms-input-placeholder {
+  color: #14151f;
+  line-height: 140%;
+  font-size: 20px;
+}
+.subscription__input input,
+.subscription__input input::placeholder {
   color: #14151f;
   line-height: 140%;
   font-size: 20px;
 }
 @media (max-width: 1500px) {
-  .subscription__input label,
-  .subscription__input input {
+  .subscription__input input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .subscription__input input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .subscription__input input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .subscription__input input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .subscription__input input,
+  .subscription__input input::placeholder {
     font-size: 16px;
   }
 }
 @media (max-width: 767px) {
-  .subscription__input label,
-  .subscription__input input {
+  .subscription__input input::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .subscription__input input::-moz-placeholder {
+    font-size: 12px;
+  }
+  .subscription__input input:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .subscription__input input::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .subscription__input input,
+  .subscription__input input::placeholder {
     font-size: 12px;
   }
 }
