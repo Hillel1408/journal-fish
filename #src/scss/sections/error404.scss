@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
   @media (max-width: 1199px) {
     padding: 25px 0 0 0;
   }
@@ -33,11 +34,14 @@
     color: #14151f;
     line-height: 120%;
     margin-top: -60px;
+    margin-bottom: 100px;
     @media (max-width: 1500px) {
       font-size: 36px;
+      margin-bottom: 82px;
     }
     @media (max-width: 1199px) {
       font-size: 24px;
+      margin-bottom: 63px;
     }
     @media (max-width: 767px) {
       font-size: 14px;
@@ -54,13 +58,12 @@
     padding-left: 23px;
     padding-right: 23px;
     width: 100%;
-    margin-top: 100px;
+    margin-top: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 44px;
     @media (max-width: 1500px) {
-      margin-top: 82px;
       padding-top: 66px;
       padding-bottom: 75px;
       border-top-right-radius: 26px;
@@ -68,13 +71,11 @@
       gap: 30px;
     }
     @media (max-width: 1199px) {
-      margin-top: 63px;
       padding-top: 45px;
       padding-bottom: 51px;
       gap: 20px;
     }
     @media (max-width: 767px) {
-      margin-top: 47px;
       padding-top: 49px;
     }
     h2 {

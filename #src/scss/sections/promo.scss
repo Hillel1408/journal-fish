@@ -44,7 +44,8 @@
     @media (max-width: 500px) {
       background-position: center;
     }
-    button {
+    a {
+      color: #14151f;
       @media (max-width: 767px) {
         margin-top: auto;
       }
@@ -53,7 +54,6 @@
   h2 {
     max-width: 872px;
     margin-bottom: 20px;
-
     span {
       background-color: #3048e9;
       color: white;
