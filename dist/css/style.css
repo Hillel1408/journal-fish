@@ -1404,7 +1404,6 @@ body {
 @media (max-width: 767px) {
   .subscription__block-1 h2 {
     margin-bottom: 16px;
-    max-width: 249px;
   }
 }
 .subscription__block-1 p {
