@@ -510,24 +510,24 @@ body {
     width: 62px;
   }
 }
-.logo span {
+.logo a {
   color: #14151f;
   font-size: 16px;
   line-height: 120%;
   font-weight: 300;
 }
 @media (max-width: 1500px) {
-  .logo span {
+  .logo a {
     font-size: 13px;
   }
 }
 @media (max-width: 1199px) {
-  .logo span {
+  .logo a {
     font-size: 10px;
   }
 }
 @media (max-width: 767px) {
-  .logo span {
+  .logo a {
     font-size: 10px;
   }
 }
@@ -812,7 +812,7 @@ body {
             transform: scale(-1, 1);
   }
 }
-.guide__flex button {
+.guide__flex a {
   color: #8230ea;
 }
 
@@ -1248,8 +1248,11 @@ body {
     background-position: center;
   }
 }
+.promo__container a {
+  color: #14151f;
+}
 @media (max-width: 767px) {
-  .promo__container button {
+  .promo__container a {
     margin-top: auto;
   }
 }
@@ -2090,6 +2093,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
 }
 @media (max-width: 1199px) {
   .error404 {
@@ -2129,15 +2133,18 @@ body {
   color: #14151f;
   line-height: 120%;
   margin-top: -60px;
+  margin-bottom: 100px;
 }
 @media (max-width: 1500px) {
   .error404 h1 {
     font-size: 36px;
+    margin-bottom: 82px;
   }
 }
 @media (max-width: 1199px) {
   .error404 h1 {
     font-size: 24px;
+    margin-bottom: 63px;
   }
 }
 @media (max-width: 767px) {
@@ -2158,7 +2165,7 @@ body {
   padding-left: 23px;
   padding-right: 23px;
   width: 100%;
-  margin-top: 100px;
+  margin-top: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2173,7 +2180,6 @@ body {
 }
 @media (max-width: 1500px) {
   .error404__block {
-    margin-top: 82px;
     padding-top: 66px;
     padding-bottom: 75px;
     border-top-right-radius: 26px;
@@ -2183,7 +2189,6 @@ body {
 }
 @media (max-width: 1199px) {
   .error404__block {
-    margin-top: 63px;
     padding-top: 45px;
     padding-bottom: 51px;
     gap: 20px;
@@ -2191,7 +2196,6 @@ body {
 }
 @media (max-width: 767px) {
   .error404__block {
-    margin-top: 47px;
     padding-top: 49px;
   }
 }
@@ -2308,6 +2312,15 @@ body {
     grid-template-columns: 1fr;
     margin-top: 30px;
   }
+}
+.they-were-able__grid-item {
+  position: relative;
+}
+.they-were-able__grid-item a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
 }
 .they-were-able__grid-item img {
   height: 455px;
