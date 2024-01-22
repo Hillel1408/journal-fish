@@ -1256,6 +1256,12 @@ body {
     margin-top: auto;
   }
 }
+@media (max-width: 500px) {
+  .promo__container a {
+    width: 100%;
+    text-align: center;
+  }
+}
 .promo h2 {
   max-width: 872px;
   margin-bottom: 20px;
@@ -1409,19 +1415,6 @@ body {
 .subscription__block-1 p {
   color: white;
   max-width: 603px;
-  font-size: 24px;
-  line-height: 140%;
-}
-@media (max-width: 1500px) {
-  .subscription__block-1 p {
-    font-size: 16px;
-  }
-}
-@media (max-width: 767px) {
-  .subscription__block-1 p {
-    font-size: 12px;
-    max-width: 214px;
-  }
 }
 .subscription__block-2 {
   position: relative;

@@ -49,6 +49,10 @@
       @media (max-width: 767px) {
         margin-top: auto;
       }
+      @media (max-width: 500px) {
+        width: 100%;
+        text-align: center;
+      }
     }
   }
   h2 {
